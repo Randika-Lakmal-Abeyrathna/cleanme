@@ -2,8 +2,9 @@
 
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Clean Me</title>
-       
+
         <link rel="stylesheet" href="<?= base_url() ?>public/css/bootstrap.min.css"/>
 
         <script src="<?= base_url() ?>public/js/jquery.js"></script>
@@ -11,23 +12,31 @@
 
     </head>
     <body>
-        <div>
-            <nav class="navbar navbar" style="margin-bottom: 0px;">
-                <div class="container-fluid">
-                    <div class="navbar navbar-header"><a class="navbar-brand" href="#">Clean Me </a></div>
-                    <ul class="nav navbar-nav navbar-right" >
+        <div >
+
+            <nav role="navigation" class="navbar navbar-default navbar">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Clean Me </a>
+
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collection of nav links and other content for toggling -->
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="<?= base_url() ?>user/registration">User Registration</a></li>
+                        <li><a href="<?= base_url() ?>Home/companyRegistration">Company Registration</a></li>
+                        <li><a href="#">Vehical Registration</a></li>
                         <li><a href="<?= base_url() ?>Home/index">Home</a></li>
                         <li><a href="#">Logout</a></li>
                     </ul>
                 </div>
-            </nav>    
-            <nav class="navbar navbar-default" >
-                <ul class="nav navbar-nav navbar-right" >
-                    <li><a href="<?= base_url() ?>user/registration">User Registration</a></li>
-                    <li><a href="<?= base_url() ?>Home/companyRegistration">Company Registration</a></li>
-                    <li><a href="#">Vehical Registration</a></li>
-                </ul>
-            </nav>    
+            </nav>
         </div>
         <!--Navigation bar Finish-->
 
