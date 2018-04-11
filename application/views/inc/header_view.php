@@ -6,6 +6,7 @@
         <title>Clean Me</title>
 
         <link rel="stylesheet" href="<?= base_url() ?>public/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="<?= base_url() ?>public/customcss/home_view.css"/>
 
         <script src="<?= base_url() ?>public/js/jquery.js"></script>
         <script src="<?= base_url() ?>public/js/bootstrap.min.js"></script>

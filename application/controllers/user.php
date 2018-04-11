@@ -17,10 +17,18 @@ class User extends CI_Controller {
         $this->load->view('inc/footer_view');
     }
 
-    public function registration() {
-        $this->load->view('inc/header_view');
-        $this->load->view('user_registration_view');
-        $this->load->view('inc/footer_view');
+    public function registration($user) {
+
+        if ($user === "admin") {
+            $this->load->view('admin/inc/dashbord_header');
+//            $this->load->view('user_registration_view');
+            $this->load->view('userManagement');
+            $this->load->view('admin/inc/dashbord_footer');
+        } else {
+            $this->load->view('inc/header_view');
+            $this->load->view('user_registration_view');
+            $this->load->view('inc/footer_view');
+        }
     }
 
 }

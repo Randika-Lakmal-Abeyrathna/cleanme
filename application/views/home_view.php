@@ -1,26 +1,25 @@
-<div class="container-fluid">
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clean Me</title>
 
-            <nav role="navigation" class="navbar navbar-default ">
-                <!-- Brand and toggle get grouped for better mobile display -->
+        <link rel="stylesheet" href="<?= base_url() ?>public/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="<?= base_url() ?>public/customcss/home_view.css"/>
+
+        <script src="<?= base_url() ?>public/js/jquery.js"></script>
+        <script src="<?= base_url() ?>public/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Clean Me </a>
+                    <a class="navbar-brand" href="#">Clean Me</a>
+                </div>
+                <div class="nav navbar-right">
 
-                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                    <a id="signin" class="btn btn-primary navbar-btn" href="#">Sign in</a>
+                    
                 </div>
-                <!-- Collection of nav links and other content for toggling -->
-                <div class="nav-tabs">
-                    <ul class="nav nav-tabs navbar-right">
-                        <li><a href="<?= base_url() ?>user/registration">User Registration</a></li>
-                        <li><a href="<?= base_url() ?>Home/companyRegistration">Company Registration</a></li>
-                        <li><a href="#">Vehical Registration</a></li>
-                        <li><a href="<?= base_url() ?>Home/index">Home</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        </nav>

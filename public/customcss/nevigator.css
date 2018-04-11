@@ -1,0 +1,122 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 22, 2018, 8:32:33 PM
+    Author     : rusiru
+*/
+
+.navbar-global {
+    background-color:  #1b5982;
+    /*
+        background: -moz-linear-gradient(45deg, #003333 0%, #05C1FF 1%, #003333 99%, #003333 100%);  ff3.6+ 
+        background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #003333), color-stop(1%, #05C1FF), color-stop(99%, #003333), color-stop(100%, #003333));  safari4+,chrome 
+        background: -webkit-linear-gradient(45deg, #003333 10%, #05C1FF 10%, #003333 99%, #003333 100%);  safari5.1+,chrome10+ 
+        background: -o-linear-gradient(45deg, #003333 10%, #05C1FF 10%, #003333 99%, #003333 100%);  opera 11.10+ 
+        background: -ms-linear-gradient(45deg, #003333 10%, #05C1FF 10%, #003333 99%, #003333 100%);  ie10+ 
+        background: linear-gradient(45deg, #333 13.4%, #05C1FF 10%, #003333 99%, #003333 100%);  w3c 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003333', endColorstr='#003333',GradientType=1 );  ie6-9 */
+}
+
+.navbar-global .navbar-brand {
+    color: white;
+}
+
+.navbar-global .navbar-user > li > a
+{
+    color: white;
+}
+
+.navbar-primary {
+    background-color: #333;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    top: 51px;
+    width: 200px;
+    z-index: 8;
+    overflow: hidden;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.navbar-primary.collapsed {
+    width: 60px;
+}
+
+.navbar-primary.collapsed .glyphicon {
+    font-size: 22px;
+}
+
+.navbar-primary.collapsed .nav-label {
+    display: none;
+}
+
+.btn-expand-collapse {
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom:0;
+    width: 100%;
+    padding: 8px 0;
+    border-top:solid 1px #666;
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-expand-collapse:hover,
+.btn-expand-collapse:focus {
+    background-color: #222;
+    color: white;
+}
+
+.btn-expand-collapse:active {
+    background-color: #111;
+}
+
+.navbar-primary-menu,
+.navbar-primary-menu li {
+    margin:0; padding:0;
+    list-style: none;
+}
+
+.navbar-primary-menu li a {
+    display: block;
+    padding: 10px 18px;
+    text-align: left;
+    border-bottom:solid 1px #444;
+    color: #ccc;
+}
+
+.navbar-primary-menu li a:hover {
+    background-color: #000;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-primary-menu li a .glyphicon {
+    margin-right: 6px;
+}
+
+.navbar-primary-menu li a:hover .glyphicon {
+    background-color:#003333; 
+}
+
+.main-content {
+    margin-top: 60px;
+    margin-left: 200px;
+    padding: 60px;
+}
+
+.collapsed + .main-content {
+    margin-left: 60px;
+}
+.sitename{
+    font-style: italic;
+
+}
